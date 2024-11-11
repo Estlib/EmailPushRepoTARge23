@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: Send Mail
       uses: dawidd6/action-send-mail@v3
-      with:
+    - with:
         server_address: smtp.gmail.com
         server_port: 587 #comment
         username: ${{ secrets.MAIL_USERNAME }}
