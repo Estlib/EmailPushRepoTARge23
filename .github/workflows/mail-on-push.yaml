@@ -10,7 +10,9 @@ on: [push]
           server_port: 587 #comment
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: YoUvE g O t MaIl!1!!1!!!!
-          body:  
-          to: jyri.vaitmaa@tthk.ee
-          from: Github actions
+          subject: "YoUvE g O t MaIl!1!!1!!!!""
+          body: "tuvipost on kiirem, aga kommiti tegi ${{github.event.pusher.name}} repost
+          ${{github.repository}} sõnumiga
+          ${{github.event.head_commit.message}} muudatused on lahedad, võrkpall on võrratu"
+          to: "jyri.vaitmaa@tthk.ee"
+          from: "Grubhub actions"
