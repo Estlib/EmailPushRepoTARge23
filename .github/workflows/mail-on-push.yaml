@@ -12,8 +12,7 @@ jobs:
         username: ${{ secrets.MAIL_USERNAME }}
         password: ${{ secrets.MAIL_PASSWORD }}
         subject: Send Mail
-        body: "tuvipost on kiirem, aga kommiti tegi"+
-        ${{github.event.pusher.name}} + "repost" + 
+        body: "tuvipost on kiirem, aga kommiti tegi ${{github.event.pusher.name}} + "repost" + 
         ${{github.repository}} + " sõnumiga " +
         ${{github.event.head_commit.message}}
         to: 
