@@ -14,6 +14,6 @@ jobs:
         subject: YoUvE g O t MaIl!1!!1!!!!
         body: "tuvipost on kiirem, aga kommiti tegi ${{github.event.pusher.name}} repost
         ${{github.repository}} sõnumiga
-        ${{github.event.head_commit.message}}"
+        ${{github.event.head_commit.message}}" muudatused on lahedad, võrkpall on võrratu
         to: jyri.vaitmaa@tthk.ee
         from: Github actions
