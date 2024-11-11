@@ -11,6 +11,6 @@ on: [push]
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: YoUvE g O t MaIl!1!!1!!!!
-          body: tuvipost 
+          body:  
           to: jyri.vaitmaa@tthk.ee
           from: Github actions
